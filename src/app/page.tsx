@@ -39,7 +39,7 @@ export default function Home() {
         </Subheading>
         <Projects projects={projects.slice(0, 3)}>
           <Link
-            href="/about"
+            href="/projects"
             className="text-blue-500 hover:underline underline-offset-4"
           >
             Checkout some of my projects.

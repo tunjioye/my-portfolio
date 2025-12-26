@@ -483,7 +483,7 @@ export const projects: Project[] = [
     stack: ["WordPress", "WooCommerce"],
   },
   {
-    title: "Me",
+    title: "Me // My Old Portfolio",
     src: null,
     description:
       "build a simple portfolio just like mine : fork then change the preset configurations and markdown pages.",
