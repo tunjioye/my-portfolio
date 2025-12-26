@@ -487,7 +487,7 @@ export const projects: Project[] = [
     src: null,
     description:
       "build a simple portfolio just like mine : fork then change the preset configurations and markdown pages.",
-    href: "https://github.com/tunjioye/me",
+    href: "https://tunji-oyeniran-portfolio.netlify.app",
     stack: ["React", "Gatsby", "GraphQL", "Markdown", "Github Pages", "PWA"],
   },
 ];
