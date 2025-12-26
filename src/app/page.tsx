@@ -1,3 +1,4 @@
+import { Link } from "next-view-transitions";
 import { Container } from "@/components/container";
 import { CTA } from "@/components/cta";
 // import { Experiences } from "@/components/experiences";
@@ -8,7 +9,6 @@ import { Scales } from "@/components/scales";
 import { Subheading } from "@/components/subheading";
 // import { experience } from "@/constants/experience";
 import { projects } from "@/constants/projects";
-import { Link } from "next-view-transitions";
 
 export default function Home() {
   return (

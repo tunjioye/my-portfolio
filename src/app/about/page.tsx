@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/container";
+import { CTA } from "@/components/cta";
 import { Heading } from "@/components/heading";
 import { Scales } from "@/components/scales";
 import { Subheading } from "@/components/subheading";
 import { Timeline } from "@/components/timeline";
-import { CTA } from "@/components/cta";
 
 export const metadata: Metadata = {
   title: "Tunji Oyeniran - About",

@@ -44,6 +44,7 @@ export const ModeToggle = () => {
 
   return (
     <button
+      type="button"
       className="flex items-center rounded-md px-2 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800"
       onClick={SWITCH}
     >

@@ -38,9 +38,9 @@ export const Experiences = ({
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <LayoutGroup>
-                    {experience.stack.map((technology, idx) => (
+                    {experience.stack.map((technology) => (
                       <StackItem
-                        key={technology + idx}
+                        key={technology}
                         technology={technology}
                         className="-mr-3 hover:z-10"
                       />
@@ -48,13 +48,15 @@ export const Experiences = ({
                   </LayoutGroup>
                 </div>
               </div>
-              <img
-                src={experience.logo}
-                alt={experience.company}
-                width={100}
-                height={100}
-                className={cn(experience.imageClass, "hidden md:block")}
-              />
+              <picture>
+                <img
+                  src={experience.logo}
+                  alt={experience.company}
+                  width={100}
+                  height={100}
+                  className={cn(experience.imageClass, "hidden md:block")}
+                />
+              </picture>
             </div>
           </div>
         ))}

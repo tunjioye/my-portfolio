@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 export const SectionHeading = ({
@@ -35,7 +36,7 @@ export const SectionHeading = ({
             duration: 0.3,
             ease: "easeInOut",
           }}
-          key={word + idx}
+          key={word}
           viewport={{
             once: true,
           }}

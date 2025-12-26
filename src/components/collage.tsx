@@ -55,13 +55,15 @@ export function Collage() {
         Travelling is in my blood
       </SectionHeading>
       <DraggableCardContainer className="relative flex min-h-[30rem] w-full items-center justify-center overflow-clip">
-        {items.map((item, idx) => (
-          <DraggableCardBody key={item.title + idx} className={item.className}>
-            <img
-              src={item.image}
-              alt={item.title}
-              className="pointer-events-none relative z-10 h-40 w-80 object-cover"
-            />
+        {items.map((item) => (
+          <DraggableCardBody key={item.title} className={item.className}>
+            <picture>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="pointer-events-none relative z-10 h-40 w-80 object-cover"
+              />
+            </picture>
             <h3 className="mt-4 text-center text-base font-bold text-neutral-700 dark:text-neutral-300">
               {item.title}
             </h3>

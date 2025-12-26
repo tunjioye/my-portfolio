@@ -6,7 +6,7 @@
     "dev": "bun run --bun next dev",
     "build": "bun run --bun next build",
     "start": "bun run --bun next start",
-    "tsc": "bun run --bun tsc --noEmit",
+    "tsc": "tsc --noEmit",
     "lint": "biome check --no-errors-on-unmatched .",
     "lint:fix": "biome check --fix --unsafe .",
     "format": "biome format .",

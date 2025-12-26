@@ -2,10 +2,10 @@
 "use client";
 
 import Image from "next/image";
-import { type Project } from "@/constants/projects";
-import { SectionHeading } from "./section-heading";
-import { MotionDiv } from "@/components/motion-div";
 import Link from "next/link";
+import { MotionDiv } from "@/components/motion-div";
+import type { Project } from "@/constants/projects";
+import { SectionHeading } from "./section-heading";
 
 export const Projects = ({
   projects = [],

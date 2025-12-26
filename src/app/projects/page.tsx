@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/container";
+import { CTA } from "@/components/cta";
 import { Heading } from "@/components/heading";
 import { Projects } from "@/components/projects";
 import { Scales } from "@/components/scales";
 import { Subheading } from "@/components/subheading";
-import { CTA } from "@/components/cta";
 import { projects } from "@/constants/projects";
 
 export const metadata: Metadata = {
