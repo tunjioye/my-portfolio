@@ -29,7 +29,7 @@ export const Navbar = () => {
     },
     {
       title: "Resume",
-      href: "https://drive.google.com/open?id=1GWvGrnBwFq8nn05uIbxNYssgvcHnAZjA",
+      href: "https://drive.google.com/open?id=1ye2-u-EHrdYSyz53bCwBetw75vEPGVpC",
       asButton: true,
     },
   ];

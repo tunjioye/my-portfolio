@@ -11,7 +11,8 @@ module.exports = {
     },
     {
       // href: `https://drive.google.com/open?id=1rWK5DJEJCs-koW1xZ3vmpyqhhwzOna6A`,
-      href: `https://drive.google.com/open?id=1GWvGrnBwFq8nn05uIbxNYssgvcHnAZjA`,
+      // href: `https://drive.google.com/open?id=1GWvGrnBwFq8nn05uIbxNYssgvcHnAZjA`,
+      href: `https://drive.google.com/open?id=1ye2-u-EHrdYSyz53bCwBetw75vEPGVpC`,
       title: `Resume`,
       target: `_blank`,
     },
