@@ -8,6 +8,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Pepvote",
+    src: null,
+    description:
+      "an electronic voting platform for managing elections, polls and other election processes.",
+    href: "https://pepvote.com",
+    stack: [
+      "React",
+      "Next JS",
+      "Convex",
+      "Better Auth",
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Shad CN",
+      "Tailwind CSS",
+      "Resend",
+      "PostHog",
+    ],
+  },
+  {
     title: "Swift Aza",
     src: null,
     description:
@@ -28,25 +48,6 @@ export const projects: Project[] = [
       "Paybis Apis",
       "Paybis Widget Web SDK",
       "PostHog",
-    ],
-  },
-  {
-    title: "Knockout Pokedex",
-    src: null,
-    description:
-      "This is a simple Pokedex built with Knockout.js. In my attempt to learn Knockout.js, I decided to build a simple Pokedex. The Pokedex is a simple web application that displays a list of Pokemon and their details. The application is built with Knockout.js, HTML, CSS, and JavaScript.",
-    href: "https://knockout-pokedex.vercel.app",
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Knockout.js",
-      "Vite",
-      "Git",
-      "GitHub",
-      "Vercel",
-      "Node JS",
-      "PokeApi",
     ],
   },
   {
@@ -74,6 +75,25 @@ export const projects: Project[] = [
       "Google Distance Matrix Api",
       "Google Sheets Api",
       "Resend",
+    ],
+  },
+  {
+    title: "Knockout Pokedex",
+    src: null,
+    description:
+      "This is a simple Pokedex built with Knockout.js. In my attempt to learn Knockout.js, I decided to build a simple Pokedex. The Pokedex is a simple web application that displays a list of Pokemon and their details. The application is built with Knockout.js, HTML, CSS, and JavaScript.",
+    href: "https://knockout-pokedex.vercel.app",
+    stack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Knockout.js",
+      "Vite",
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Node JS",
+      "PokeApi",
     ],
   },
   {
@@ -369,7 +389,7 @@ export const projects: Project[] = [
     stack: ["FIGMA", "Adobe Illustrator"],
   },
   {
-    title: "Pepvote",
+    title: "Pepvote Alpha",
     src: "https://poly-screenshots.wellfound.com/Project/93/1099005/4e2581735fa68d71ee0ed1d5c7aa526b-original.png",
     description:
       "an electronic voting platform for managing elections, polls and other election processes.",
