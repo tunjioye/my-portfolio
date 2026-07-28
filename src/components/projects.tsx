@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MotionDiv } from "@/components/motion-div";
 import type { Project } from "@/constants/projects";
+import { ProjectCarousel } from "./project-carousel";
 import { SectionHeading } from "./section-heading";
 
 export const Projects = ({
@@ -26,16 +27,25 @@ export const Projects = ({
             transition={{ duration: 0.3, delay: 0.05 * idx }}
           >
             <div className="flex flex-col justify-between md:flex-row gap-4">
-              {project.src != null && (
+              {project.images?.length ? (
                 <div className="shrink-0 w-full md:w-1/3">
-                  <Image
-                    src={project.src}
-                    alt={project.title}
-                    height={200}
-                    width={200}
-                    className="w-full rounded object-cover transition duration-200"
+                  <ProjectCarousel
+                    images={project.images}
+                    projectTitle={project.title}
                   />
                 </div>
+              ) : (
+                project.src != null && (
+                  <div className="shrink-0 w-full md:w-1/3">
+                    <Image
+                      src={project.src}
+                      alt={project.title}
+                      height={200}
+                      width={200}
+                      className="w-full rounded object-cover transition duration-200"
+                    />
+                  </div>
+                )
               )}
               <div className="flex-1 flex flex-col gap-2">
                 {project.href != null ? (

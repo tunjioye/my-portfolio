@@ -1,6 +1,13 @@
+export type ProjectImage = {
+  src: string;
+  alt: string;
+  label: string;
+};
+
 export type Project = {
   title: string;
   src: string | null;
+  images?: ProjectImage[];
   href: string | null;
   description: string;
   stack: string[];
@@ -25,6 +32,42 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Resend",
       "PostHog",
+    ],
+  },
+  {
+    title: "Dominion Mandate Posting",
+    src: null,
+    images: [
+      {
+        src: "/images/projects/dominion-mandate-posting/auth.webp",
+        alt: "Dominion Mandate Posting Google sign-in page",
+        label: "Google sign-in",
+      },
+      {
+        src: "/images/projects/dominion-mandate-posting/dashboard.webp",
+        alt: "Dominion Mandate Posting dashboard with Substack posts and social repost statuses",
+        label: "RSS post dashboard",
+      },
+      {
+        src: "/images/projects/dominion-mandate-posting/metrics.webp",
+        alt: "Dominion Mandate Posting metrics dashboard with feed reliability and social repost coverage",
+        label: "Metrics dashboard",
+      },
+    ],
+    description:
+      "A social publishing workflow that syncs Dominion Mandate Substack posts and helps the Dominion City North York team track and automate reposts to connected social channels.",
+    href: "https://dominion-mandate-posting.vercel.app",
+    stack: [
+      "Next JS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shad CN",
+      "Convex",
+      "Better Auth",
+      "Buffer",
+      "Vercel",
+      "Git",
+      "GitHub",
     ],
   },
   {

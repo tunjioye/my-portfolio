@@ -172,6 +172,14 @@ an electronic voting platform for managing elections, polls and other election p
 
 ---
 
+#### [Dominion Mandate Posting](https://dominion-mandate-posting.vercel.app)
+
+A social publishing workflow that syncs Dominion Mandate Substack posts and helps the Dominion City North York team track and automate reposts to connected social channels.
+
+<samp>Next JS | TypeScript | Tailwind CSS | Shad CN | Convex | Better Auth | Buffer | Vercel | Git | GitHub</samp>
+
+---
+
 #### [Edgetechies](https://archive.edgetechies.com)
 
 Edgetechies, is a company passionate about designing & building compelling digital products, managing projects/brands and equipping everyday people/organizations to leverage new technologies in creating value.
