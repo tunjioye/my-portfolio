@@ -621,6 +621,18 @@ export const projects: Project[] = [
   {
     title: "Spectre CSS Examples",
     src: null,
+    images: [
+      {
+        src: "/images/projects/spectre-css-examples/login-01.webp",
+        alt: "Spectre CSS email login example",
+        label: "Email login",
+      },
+      {
+        src: "/images/projects/spectre-css-examples/login-02.webp",
+        alt: "Spectre CSS username login example",
+        label: "Username login",
+      },
+    ],
     description:
       "Spectre CSS Examples provides some quick html examples based on the Spectre CSS Framework.",
     href: "https://github.com/tunjioye/spectre-css-examples",
