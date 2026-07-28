@@ -156,6 +156,23 @@ export const projects: Project[] = [
   {
     title: "Knockout Pokedex",
     src: null,
+    images: [
+      {
+        src: "/images/projects/knockout-pokedex/home.webp",
+        alt: "Knockout Pokedex homepage with the first generation Pokémon grid",
+        label: "Pokédex home",
+      },
+      {
+        src: "/images/projects/knockout-pokedex/butterfree-details.webp",
+        alt: "Knockout Pokedex Butterfree details modal with stats and types",
+        label: "Butterfree details",
+      },
+      {
+        src: "/images/projects/knockout-pokedex/arc-search.webp",
+        alt: "Knockout Pokedex search results for arc",
+        label: "Search: arc",
+      },
+    ],
     description:
       "This is a simple Pokedex built with Knockout.js. In my attempt to learn Knockout.js, I decided to build a simple Pokedex. The Pokedex is a simple web application that displays a list of Pokemon and their details. The application is built with Knockout.js, HTML, CSS, and JavaScript.",
     href: "https://knockout-pokedex.vercel.app",
