@@ -268,6 +268,23 @@ export const projects: Project[] = [
   {
     title: "Yawo",
     src: null,
+    images: [
+      {
+        src: "/images/projects/yawo/home.webp",
+        alt: "Yawo homepage promoting collateral-free loans for small businesses",
+        label: "Homepage",
+      },
+      {
+        src: "/images/projects/yawo/how-it-works.webp",
+        alt: "Yawo loan application and repayment process",
+        label: "How it works",
+      },
+      {
+        src: "/images/projects/yawo/eligibility.webp",
+        alt: "Yawo eligibility and requirements for traders",
+        label: "Who qualifies",
+      },
+    ],
     description:
       "Yawo is a platform that gives quick loan to small businesses especially traders.",
     href: "https://yawo.ng",
