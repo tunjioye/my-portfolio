@@ -297,8 +297,8 @@ export const projects: Project[] = [
       },
       {
         src: "/images/projects/love-message/love-message-02-message.webp",
-        alt: "Love Message encryption form filled with I love you.",
-        label: "Message entered",
+        alt: "Love Message encrypted message output for I love you.",
+        label: "Encrypted message",
       },
       {
         src: "/images/projects/love-message/love-message-03-decrypt.webp",
