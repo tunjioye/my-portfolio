@@ -289,6 +289,23 @@ export const projects: Project[] = [
   {
     title: "Love Message",
     src: null,
+    images: [
+      {
+        src: "/images/projects/love-message/love-message-01-initial.webp",
+        alt: "Love Message encryption form",
+        label: "Encrypt a message",
+      },
+      {
+        src: "/images/projects/love-message/love-message-02-message.webp",
+        alt: "Love Message encryption form filled with I love you.",
+        label: "Message entered",
+      },
+      {
+        src: "/images/projects/love-message/love-message-03-decrypt.webp",
+        alt: "Love Message decryption form",
+        label: "Decrypt a message",
+      },
+    ],
     description:
       "Love Message is a fun project that encrypts and decrypts a message.",
     href: "https://lm.tunjioyeniran.com",
