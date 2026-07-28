@@ -89,6 +89,28 @@ export const projects: Project[] = [
   {
     title: "Swift Aza",
     src: null,
+    images: [
+      {
+        src: "/images/projects/swift-aza/swift-aza-login.webp",
+        alt: "Swift Aza passwordless login page",
+        label: "Login",
+      },
+      {
+        src: "/images/projects/swift-aza/swift-aza-product.webp",
+        alt: "Swift Aza Buy Crypto and Sell Crypto product page",
+        label: "Product page",
+      },
+      {
+        src: "/images/projects/swift-aza/swift-aza-terms.webp",
+        alt: "Swift Aza Terms of Use page",
+        label: "Terms of Use",
+      },
+      {
+        src: "/images/projects/swift-aza/swift-aza-privacy.webp",
+        alt: "Swift Aza Privacy Policy page",
+        label: "Privacy Policy",
+      },
+    ],
     description:
       "Swift Aza is a simple Crypto Web App. With On-Ramp (Buy Crypto) and Off-Ramp (Sell Crypto) features. Leveraging <a href='https://paybis.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Paybis</a> Apis and Widget Web SDK. While using <a href='https://convex.dev' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Convex</a> Backend as a Service. And <a href='https://posthog.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>PostHog</a> for Analytics.",
     href: "https://swiftaza.com",
