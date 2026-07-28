@@ -304,7 +304,7 @@ export const projects: Project[] = [
     src: null,
     images: wellfoundScreenshots("account-report", "Account Report", 11),
     description:
-      "Account Report is an accounting software developed to make financial data entry easy & generating financial reports even easier. <a href='https://wellfound.com/projects/1294367-account-report' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
+      "Account Report is an accounting software developed to make financial data entry easy & generating financial reports even easier. <a href='https://wellfound.com/projects/1294367-account-report' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
     href: null,
     stack: [
       "PHP",
@@ -320,11 +320,11 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Reventify App",
+    title: "Reventify Web App",
     src: null,
-    images: wellfoundScreenshots("reventify-app", "Reventify App", 20),
+    images: wellfoundScreenshots("reventify-app", "Reventify Web App", 20),
     description:
-      "Reventify is a progressive web application that provides professionals with the resources and tools needed to advance their careers. Career planning tool and <b>CV Builder</b> with <b>Expert Insights / Smart Suggestions</b>. Visit <a href='https://reventify.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Reventify Website</a> for more information about features. <a href='https://wellfound.com/projects/1294370-reventify-web-app' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
+      "Reventify is a progressive web application that provides professionals with the resources and tools needed to advance their careers. Career planning tool and <b>CV Builder</b> with <b>Expert Insights / Smart Suggestions</b>. Visit <a href='https://reventify.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Reventify Website</a> for more information about features. <a href='https://wellfound.com/projects/1294370-reventify-web-app' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
     href: null,
     stack: [
       "React",
@@ -345,11 +345,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Reventify CMS",
+    src: null,
+    images: wellfoundScreenshots("reventify-cms", "Reventify CMS", 1),
+    description:
+      "Reventify CMS houses the data that powers accurate CV suggestions for customers. Built with Strapi JS, it gives technical and non-technical users an easier way to manage expert-insight data, coupon codes, and imports. <a href='https://wellfound.com/projects/1294369-reventify-cms' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
+    href: null,
+    stack: ["Strapi", "Node JS", "MongoDB", "CSV / JSON Import-Export"],
+  },
+  {
     title: "Agridata",
     src: null,
     images: wellfoundScreenshots("agridata", "Agridata", 7),
     description:
-      "Agridata by Agriteer. The aim of the project is to create a place for people to get the latest average market price for common day to day commodities such as Beans, Rice etc. <a href='https://wellfound.com/projects/1294383-agridata' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
+      "Agridata by Agriteer. The aim of the project is to create a place for people to get the latest average market price for common day to day commodities such as Beans, Rice etc. <a href='https://wellfound.com/projects/1294383-agridata' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
     href: null,
     stack: [
       "PHP",
@@ -428,16 +437,43 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Heroshe Web Application",
+    title: "Heroshe Operations Manager - HERA",
+    src: null,
+    images: wellfoundScreenshots(
+      "heroshe-operations-manager",
+      "Heroshe Operations Manager - HERA",
+      14,
+    ),
+    description:
+      "Heroshe’s operations admin dashboard for managing shipments, customers, manifests, arrivals, logistics, payments, orders, dispatch, scheduled pickups, and team access. <a href='https://wellfound.com/projects/1294368-hera' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
+    href: null,
+    stack: ["Vue JS", "Vuex", "Nuxt JS", "Sentry", "Git"],
+  },
+  {
+    title: "Heroshe Customer Web App - VERA",
     src: null,
     images: wellfoundScreenshots(
       "heroshe-web-application",
-      "Heroshe Web Application",
+      "Heroshe Customer Web App - VERA",
       18,
     ),
-    description: "customer portal for Heroshe.",
+    description:
+      "Heroshe’s customer shipping portal, where customers can track shipments, pay for shipping and delivery, fund wallets, preview processed-shipment images, and schedule pickups. <a href='https://wellfound.com/projects/1294366-vera' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
     href: "https://myheroshe.com",
-    stack: ["Nuxt JS", "SCSS", "Git", "Jest", "Gitlab", "CI/CD", "Zeplin"],
+    stack: ["Vue JS", "Nuxt JS", "SCSS", "Jest", "Gitlab", "CI/CD", "Zeplin"],
+  },
+  {
+    title: "Heroshe Printing Service - PHERO",
+    src: null,
+    images: wellfoundScreenshots(
+      "heroshe-printing-service",
+      "Heroshe Printing Service - PHERO",
+      2,
+    ),
+    description:
+      "A printer-management service for Heroshe warehouse teams. Its GUI makes it easier to register and manage printers, monitor their status, and review logs without needing command-line or Ngrok expertise. <a href='https://wellfound.com/projects/1294375-phero-v3' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See it on Wellfound</a>",
+    href: null,
+    stack: ["JavaScript", "jQuery", "jQuery AJAX", "HTML5", "CSS3", "WebSockets"],
   },
   {
     title: "Tapword",
