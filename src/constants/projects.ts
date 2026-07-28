@@ -214,6 +214,33 @@ export const projects: Project[] = [
   {
     title: "Jochebed Foundation Website",
     src: null,
+    images: [
+      {
+        src: "/images/projects/jochebed-foundation/home.webp",
+        alt: "Jochebed Foundation home page",
+        label: "Home",
+      },
+      {
+        src: "/images/projects/jochebed-foundation/scholarship.webp",
+        alt: "Jochebed Foundation scholarship page",
+        label: "Scholarship",
+      },
+      {
+        src: "/images/projects/jochebed-foundation/get-involved.webp",
+        alt: "Jochebed Foundation get involved page",
+        label: "Get involved",
+      },
+      {
+        src: "/images/projects/jochebed-foundation/contact.webp",
+        alt: "Jochebed Foundation contact page",
+        label: "Contact",
+      },
+      {
+        src: "/images/projects/jochebed-foundation/faq.webp",
+        alt: "Jochebed Foundation frequently asked questions page",
+        label: "FAQ",
+      },
+    ],
     description:
       "Official Jochebed Foundation Website. Jochebed Foundation is a non-profit organization that provides education via her scholarship initiative to people regardless of financial barriers. Jochebed Foundation also provides funding for religious projects.",
     href: "https://jochebed-foundation.clearerangle.com",
