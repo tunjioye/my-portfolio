@@ -291,7 +291,7 @@ export const projects: Project[] = [
   },
   {
     title: "Terrace FI",
-    src: "https://drive.google.com/uc?id=1p65N23z_0lRwLKWQe6h4Vph2_pTinIm4",
+    src: "/images/projects/terrace-fi/terrace-fi.webp",
     description:
       "<a href='https://terrace.fi' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Terrace</a> provides market access to the world’s leading centralized and decentralized crypto trading and liquidity venues through a single, integrated platform. This is a platform similar to Binance but targeted towards businesses rather than individual customers. Even though personal accounts are also supported.",
     href: "https://app.terrace.fi",
@@ -479,7 +479,7 @@ export const projects: Project[] = [
   },
   {
     title: "Oyoyo",
-    src: "https://drive.google.com/uc?id=11R763gUhnKkIGIaMHCao6FD5CRbb8RC-",
+    src: "/images/projects/oyoyo/oyoyo.webp",
     description:
       "Oyoyo is an application built for tailors, weavers and other artisans for client management and work orders. Oyoyo aims to connect fashionistas to quality tailors and weavers by showcasing their works in a lookbook (a social feed inspired by tiktok) with ability to engage with artisans via liking, commenting or sharing their media post, as well as calling or chatting with registered tailors and weavers.",
     href: "https://oyoyo-staging.vercel.app",

@@ -83,6 +83,7 @@ export function ProjectCarousel({
                     src={image.src}
                     alt={image.alt}
                     fill
+                    unoptimized
                     sizes="(min-width: 768px) 33vw, 100vw"
                     className="object-cover transition duration-300 group-hover/image:scale-[1.02]"
                   />
@@ -129,6 +130,7 @@ export function ProjectCarousel({
                 alt={activeImage.alt}
                 fill
                 priority
+                unoptimized
                 sizes="100vw"
                 className="object-contain"
               />
