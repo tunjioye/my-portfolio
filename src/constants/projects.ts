@@ -112,9 +112,26 @@ export const projects: Project[] = [
   {
     title: "Triptimizer",
     src: null,
+    images: [
+      {
+        src: "/images/projects/triptimizer/home.webp",
+        alt: "Triptimizer home page with the trip-sequencing form",
+        label: "Home page",
+      },
+      {
+        src: "/images/projects/triptimizer/about.webp",
+        alt: "Triptimizer About page",
+        label: "About",
+      },
+      {
+        src: "/images/projects/triptimizer/get-pass.webp",
+        alt: "Triptimizer Get Pass registration page",
+        label: "Get Pass",
+      },
+    ],
     description:
       "Triptimizer is an innovative web application designed to streamline the process of planning and optimizing your trips. With Triptimizer, you can effortlessly generate the most efficient routes for your journeys, taking into account either the shortest distance or the shortest time to reach multiple destinations.",
-    href: "https://triptimizer.com",
+    href: "https://triptimizer.vercel.app",
     stack: [
       "React",
       "TypeScript",

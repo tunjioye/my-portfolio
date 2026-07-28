@@ -29,7 +29,7 @@ The application is built with Knockout.js, HTML, CSS, and JavaScript.
 
 ---
 
-#### [Triptimizer](https://triptimizer.com)
+#### [Triptimizer](https://triptimizer.vercel.app)
 
 Triptimizer is an innovative web application designed to streamline the process of planning and optimizing your trips. With Triptimizer, you can effortlessly generate the most efficient routes for your journeys, taking into account either the shortest distance or the shortest time to reach multiple destinations.
 
