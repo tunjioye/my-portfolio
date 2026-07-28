@@ -672,6 +672,18 @@ export const projects: Project[] = [
   {
     title: "Me // My Old Portfolio",
     src: null,
+    images: [
+      {
+        src: "/images/projects/old-portfolio/home.webp",
+        alt: "Tunji Oyeniran old portfolio home page",
+        label: "Home page",
+      },
+      {
+        src: "/images/projects/old-portfolio/projects.webp",
+        alt: "Tunji Oyeniran old portfolio projects page",
+        label: "Projects page",
+      },
+    ],
     description:
       "build a simple portfolio just like mine : fork then change the preset configurations and markdown pages.",
     href: "https://tunji-oyeniran-portfolio.netlify.app",
