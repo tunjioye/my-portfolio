@@ -633,6 +633,43 @@ export const projects: Project[] = [
   {
     title: "Alethic Resources",
     src: null,
+    images: [
+      {
+        src: "/images/projects/alethic-resources/home.webp",
+        alt: "Alethic Resources home hero",
+        label: "Home",
+      },
+      {
+        src: "/images/projects/alethic-resources/about.webp",
+        alt: "Alethic Resources About Us section",
+        label: "About",
+      },
+      {
+        src: "/images/projects/alethic-resources/vision.webp",
+        alt: "Alethic Resources Vision section",
+        label: "Vision",
+      },
+      {
+        src: "/images/projects/alethic-resources/products.webp",
+        alt: "Alethic Resources products section",
+        label: "Products",
+      },
+      {
+        src: "/images/projects/alethic-resources/services.webp",
+        alt: "Alethic Resources services section",
+        label: "Services",
+      },
+      {
+        src: "/images/projects/alethic-resources/team.webp",
+        alt: "Alethic Resources expert team section",
+        label: "Team",
+      },
+      {
+        src: "/images/projects/alethic-resources/contact.webp",
+        alt: "Alethic Resources contact and office information",
+        label: "Contact",
+      },
+    ],
     description: "official website of Alethic Resources Nigeria Limited.",
     href: "https://alethicresources.netlify.app",
     stack: ["React", "Bitbucket", "Netlify"],
