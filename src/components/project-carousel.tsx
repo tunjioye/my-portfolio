@@ -21,6 +21,7 @@ export function ProjectCarousel({
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const activeImage = activeIndex === null ? null : images[activeIndex];
+  const hasMultipleImages = images.length > 1;
 
   const showPreviousImage = useCallback(() => {
     setActiveIndex((currentIndex) => {
@@ -100,8 +101,12 @@ export function ProjectCarousel({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-2 md:-left-3" />
-        <CarouselNext className="right-2 md:-right-3" />
+        {hasMultipleImages && (
+          <>
+            <CarouselPrevious className="left-2 md:-left-3" />
+            <CarouselNext className="right-2 md:-right-3" />
+          </>
+        )}
       </Carousel>
 
       {activeImage && activeIndex !== null && (
@@ -132,31 +137,33 @@ export function ProjectCarousel({
               <span className="truncate text-neutral-300">
                 {activeImage.label}
               </span>
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={showPreviousImage}
-                  className="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
-                  aria-label="Previous screenshot"
-                >
-                  <ArrowLeft className="size-4" aria-hidden="true" />
-                </button>
-                <span className="min-w-10 text-center tabular-nums">
-                  {activeIndex + 1} / {images.length}
-                </span>
-                <button
-                  type="button"
-                  onClick={showNextImage}
-                  className="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
-                  aria-label="Next screenshot"
-                >
-                  <ArrowRight className="size-4" aria-hidden="true" />
-                </button>
-              </div>
+              {hasMultipleImages && (
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={showPreviousImage}
+                    className="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+                    aria-label="Previous screenshot"
+                  >
+                    <ArrowLeft className="size-4" aria-hidden="true" />
+                  </button>
+                  <span className="min-w-10 text-center tabular-nums">
+                    {activeIndex + 1} / {images.length}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={showNextImage}
+                    className="inline-flex size-8 cursor-pointer items-center justify-center rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+                    aria-label="Next screenshot"
+                  >
+                    <ArrowRight className="size-4" aria-hidden="true" />
+                  </button>
+                </div>
+              )}
               <button
                 type="button"
                 onClick={() => setActiveIndex(null)}
-                className="inline-flex size-8 cursor-pointer items-center justify-center justify-self-end rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+                className="col-start-3 inline-flex size-8 cursor-pointer items-center justify-center justify-self-end rounded-full border border-neutral-300 bg-white text-neutral-700 shadow-sm transition hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
                 aria-label="Close full-screen screenshot"
               >
                 <X className="size-4" aria-hidden="true" />

@@ -13,10 +13,26 @@ export type Project = {
   stack: string[];
 };
 
+const wellfoundScreenshots = (
+  projectSlug: string,
+  projectTitle: string,
+  count: number,
+): ProjectImage[] =>
+  Array.from({ length: count }, (_, index) => {
+    const screenshotNumber = index + 1;
+    const screenshotFilename = `screenshot-${String(screenshotNumber).padStart(2, "0")}.webp`;
+
+    return {
+      src: `/images/projects/${projectSlug}/${screenshotFilename}`,
+      alt: `${projectTitle} screenshot ${screenshotNumber}`,
+      label: `Screenshot ${screenshotNumber}`,
+    };
+  });
+
 export const projects: Project[] = [
   {
     title: "Pepvote",
-    src: null,
+    src: "/images/projects/pepvote/pepvote-home.webp",
     description:
       "an electronic voting platform for managing elections, polls and other election processes.",
     href: "https://pepvote.com",
@@ -244,7 +260,8 @@ export const projects: Project[] = [
   },
   {
     title: "Account Report",
-    src: "https://poly-screenshots.wellfound.com/Project/0b/1294367/688b6a8ea2e87b7b91697defe78f91dd-original.png",
+    src: null,
+    images: wellfoundScreenshots("account-report", "Account Report", 11),
     description:
       "Account Report is an accounting software developed to make financial data entry easy & generating financial reports even easier. <a href='https://wellfound.com/projects/1294367-account-report' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
     href: null,
@@ -263,7 +280,8 @@ export const projects: Project[] = [
   },
   {
     title: "Reventify App",
-    src: "https://poly-screenshots.wellfound.com/Project/cd/1294370/38af80eac1b94bd3109b0a5bbd72d7b8-original.png",
+    src: null,
+    images: wellfoundScreenshots("reventify-app", "Reventify App", 20),
     description:
       "Reventify is a progressive web application that provides professionals with the resources and tools needed to advance their careers. Career planning tool and <b>CV Builder</b> with <b>Expert Insights / Smart Suggestions</b>. Visit <a href='https://reventify.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Reventify Website</a> for more information about features. <a href='https://wellfound.com/projects/1294370-reventify-web-app' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
     href: null,
@@ -287,7 +305,8 @@ export const projects: Project[] = [
   },
   {
     title: "Agridata",
-    src: "https://poly-screenshots.wellfound.com/Project/ab/1294383/d16f57a63af2ce72e2d9da338ba115d7-original.png",
+    src: null,
+    images: wellfoundScreenshots("agridata", "Agridata", 7),
     description:
       "Agridata by Agriteer. The aim of the project is to create a place for people to get the latest average market price for common day to day commodities such as Beans, Rice etc. <a href='https://wellfound.com/projects/1294383-agridata' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>See Screenshots on Wellfound</a>",
     href: null,
@@ -351,7 +370,8 @@ export const projects: Project[] = [
   },
   {
     title: "Heroshe Website",
-    src: "https://poly-screenshots.wellfound.com/Project/6f/1294385/b76d7133f7bb1eb9407ecb37334e59af-original.png",
+    src: null,
+    images: wellfoundScreenshots("heroshe-website", "Heroshe Website", 12),
     description:
       "Buy products from any trusted US online store using your Heroshe US Shipping Address and Heroshe will ship and deliver your package to you.",
     href: "https://heroshe.com",
@@ -368,14 +388,20 @@ export const projects: Project[] = [
   },
   {
     title: "Heroshe Web Application",
-    src: "https://poly-screenshots.wellfound.com/Project/7c/1294366/1927fd17f04da5f9047ee67efbf35937-original.png",
+    src: null,
+    images: wellfoundScreenshots(
+      "heroshe-web-application",
+      "Heroshe Web Application",
+      18,
+    ),
     description: "customer portal for Heroshe.",
     href: "https://myheroshe.com",
     stack: ["Nuxt JS", "SCSS", "Git", "Jest", "Gitlab", "CI/CD", "Zeplin"],
   },
   {
     title: "Tapword",
-    src: "https://poly-screenshots.wellfound.com/Project/d9/1099006/1a74b806a76138f145f5fae5222a12be-original.png",
+    src: null,
+    images: wellfoundScreenshots("tapword", "Tapword", 4),
     description:
       "<em>words are limitless</em> : is a word game that tests your knowledge of English words. Tapword provides a means to combine as many letters as you can to make the longest word you possibly can when given a limited number of random letters..",
     href: "https://tapword.tunjioyeniran.com",
@@ -391,7 +417,12 @@ export const projects: Project[] = [
   },
   {
     title: "C & I Leasing Chatbot Forms",
-    src: "https://poly-screenshots.wellfound.com/Project/36/1294386/6f505e609c16b9b5744b4270e2c0a86b-original.png",
+    src: null,
+    images: wellfoundScreenshots(
+      "c-i-leasing-chatbot-forms",
+      "C & I Leasing Chatbot Forms",
+      4,
+    ),
     description:
       "webview forms developed for C & I Leasing Oracle ODA Chatbot. The forms are integrated with the client's car reservation API (test environment). <a href='https://c-ileasing-forms.vercel.app/reservation' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Car Reservation Form</a>, <a href='https://c-ileasing-forms.vercel.app/dashboard' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Hertz Feedback Form</a> and <a href='https://c-ileasing-forms.vercel.app/dashboard' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Hertz Feedback Dashboard</a>. The forms are also designed to look like Google Forms.",
     href: "https://c-ileasing-forms.vercel.app",
@@ -408,7 +439,8 @@ export const projects: Project[] = [
   },
   {
     title: "Homehealth",
-    src: "https://poly-screenshots.wellfound.com/Project/db/1294384/e4106c3839aed7f982c2a8298a64e06c-original.png",
+    src: null,
+    images: wellfoundScreenshots("homehealth", "Homehealth", 7),
     description:
       "a portal that provides information about COVID-19 coronavirus. Resources, Statistics, <a href='https://homehealth.vercel.app/forms/risk-assessment' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Risk Assessment Form</a> and <a href='https://homehealth.vercel.app/dashboard' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Risk Assessment Dashboard</a>.",
     href: "https://homehealth.vercel.app",
@@ -433,7 +465,8 @@ export const projects: Project[] = [
   },
   {
     title: "Pepvote Alpha",
-    src: "https://poly-screenshots.wellfound.com/Project/93/1099005/4e2581735fa68d71ee0ed1d5c7aa526b-original.png",
+    src: null,
+    images: wellfoundScreenshots("pepvote-alpha", "Pepvote Alpha", 15),
     description:
       "an electronic voting platform for managing elections, polls and other election processes.",
     href: "https://pepvote.com",
@@ -441,7 +474,8 @@ export const projects: Project[] = [
   },
   {
     title: "Edgetechies",
-    src: "https://poly-screenshots.wellfound.com/Project/83/1294380/9d4d56bf9ca58ad0855ba19559aabe9e-original.png",
+    src: null,
+    images: wellfoundScreenshots("edgetechies", "Edgetechies", 4),
     description:
       "Edgetechies, is a company passionate about designing & building compelling digital products, managing projects/brands and equipping everyday people/organizations to leverage new technologies in creating value.",
     href: "https://archive.edgetechies.com",
@@ -518,6 +552,7 @@ export const projects: Project[] = [
   {
     title: "TKP Mission Forms",
     src: null,
+    images: wellfoundScreenshots("tkp-mission-forms", "TKP Mission Forms", 1),
     description:
       "custom built form entry for TKP (The Kingdom Project) events and mission outreaches.",
     href: "https://forms.tkpmission.org",
