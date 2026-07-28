@@ -591,6 +591,11 @@ export const projects: Project[] = [
   {
     title: "Trade Finance UI/UX Design",
     src: null,
+    images: wellfoundScreenshots(
+      "trade-finance-ui-ux-design",
+      "Trade Finance UI/UX Design",
+      13,
+    ),
     description:
       "UI/UX Design and Prototyping of a Trade Solution in progress ...",
     href: "https://www.figma.com/proto/kHXvT63ao4pzcCVX40fToq/Trade-Finance-Dashboard",
