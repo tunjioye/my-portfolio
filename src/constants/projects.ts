@@ -194,6 +194,13 @@ export const projects: Project[] = [
   {
     title: "Any CBT",
     src: null,
+    images: [
+      {
+        src: "/images/projects/any-cbt/login.webp",
+        alt: "Any CBT login page",
+        label: "Login page",
+      },
+    ],
     description:
       "Any CBT allows you generate CBT questions and take a quiz from uploaded materials from written text, uploaded documents and youtube video.",
     href: "https://anycbt.clearerangle.com",
