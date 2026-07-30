@@ -29,6 +29,21 @@ const wellfoundScreenshots = (
     };
   });
 
+const namedScreenshots = (
+  projectSlug: string,
+  projectTitle: string,
+  labels: readonly string[],
+): ProjectImage[] =>
+  labels.map((label, index) => {
+    const screenshotFilename = `screenshot-${String(index + 1).padStart(2, "0")}.webp`;
+
+    return {
+      src: `/images/projects/${projectSlug}/${screenshotFilename}`,
+      alt: `${projectTitle} ${label} screen`,
+      label,
+    };
+  });
+
 export const projects: Project[] = [
   {
     title: "Pepvote",
@@ -618,10 +633,24 @@ export const projects: Project[] = [
   {
     title: "Trade Finance UI/UX Design",
     src: null,
-    images: wellfoundScreenshots(
+    images: namedScreenshots(
       "trade-finance-ui-ux-design",
       "Trade Finance UI/UX Design",
-      13,
+      [
+        "Auth - Login",
+        "Dashboard",
+        "New FX Request",
+        "Upload XML to CBN",
+        "New Form M - End - Part 4",
+        "New Form M - End - Part 3",
+        "New Form M - End - Part 2",
+        "New Form M - Attachments",
+        "New Form M - Transportation",
+        "New Form M - Goods - Add Goods",
+        "New Form M - Header",
+        "New Form M - End - Part 1",
+        "New Form M - Goods",
+      ],
     ),
     description:
       "UI/UX Design and Prototyping of a Trade Solution in progress ...",
