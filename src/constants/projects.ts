@@ -34,8 +34,11 @@ const namedScreenshots = (
   projectTitle: string,
   labels: readonly string[],
 ): ProjectImage[] =>
-  labels.map((label, index) => {
-    const screenshotFilename = `screenshot-${String(index + 1).padStart(2, "0")}.webp`;
+  labels.map((label) => {
+    const screenshotFilename = `${label
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")}.webp`;
 
     return {
       src: `/images/projects/${projectSlug}/${screenshotFilename}`,
