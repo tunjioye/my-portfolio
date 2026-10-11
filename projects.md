@@ -9,7 +9,7 @@ title: "Projects"
 
 ---
 
-#### [Swift Aza](https://swiftaza.com)
+#### Swift Aza
 
 Swift Aza is a simple Crypto Web App. With On-Ramp (Buy Crypto) and Off-Ramp (Sell Crypto) features.
 Leveraging [Paybis](https://paybis.com) Apis and Widget Web SDK. While using [Convex](https://convex.dev) Backend as a Service. And [PostHog](https://posthog.com) for Analytics.

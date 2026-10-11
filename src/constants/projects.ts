@@ -131,7 +131,7 @@ export const projects: Project[] = [
     ],
     description:
       "Swift Aza is a simple Crypto Web App. With On-Ramp (Buy Crypto) and Off-Ramp (Sell Crypto) features. Leveraging <a href='https://paybis.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Paybis</a> Apis and Widget Web SDK. While using <a href='https://convex.dev' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>Convex</a> Backend as a Service. And <a href='https://posthog.com' target='_blank' rel='noopener noreferrer' class='text-blue-500 hover:underline underline-offset-4'>PostHog</a> for Analytics.",
-    href: "https://swiftaza.com",
+    href: null,
     stack: [
       "React",
       "TypeScript",
